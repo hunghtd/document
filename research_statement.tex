@@ -1,0 +1,308 @@
+\documentclass[10pt]{memoir}
+
+% based on kieran healy's memoir modifications
+\usepackage{mako-mem}
+\chapterstyle{article-3}
+\pagestyle{memo}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[garamond]{mathdesign}
+
+\usepackage[letterpaper,left=1.2in,right=1.2in,top=1.2in,bottom=1.2in]{geometry}
+
+% packages i use in essentially every document
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+
+% packages i use in many documents but leave off by default
+% \usepackage{amsmath, amsthm, amssymb}
+% \usepackage{dcolumn}
+% \usepackage{endfloat}
+
+% import and customize urls
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[breaklinks]{hyperref}
+
+\hypersetup{colorlinks=true, linkcolor=Black, citecolor=Black, filecolor=Blue,
+    urlcolor=Blue, unicode=true}
+
+% add bibliographic stuff 
+% \usepackage[round]{natbib}
+% \def\citepos#1{\citeauthor{#1}'s (\citeyear{#1})}
+% \def\citespos#1{\citeauthor{#1}' (\citeyear{#1})}
+
+% import vc stuff after running `make vc`: \input{vc} \pagestyle{kjhgit}
+
+\begin{document}
+
+\setlength{\parskip}{4.5pt}
+
+\baselineskip 14.5pt
+
+\title{Research Statement}
+\author{Benjamin Mako Hill}
+
+\maketitle
+
+My research is focused on collective action in online communities and
+seeks to understand why some attempts at collaborative production --
+like Wikipedia and Linux -- build large volunteer communities while
+the vast majority never attract even a second contributor. I am
+particularly interested in how the design of communication and
+information technologies shape social outcomes like the decision to
+join a community or contribute to a public good. My research is deeply
+interdisciplinary and lies at the intersection of sociology,
+communication, and human-computer interaction. I combine data from
+online communities that make failures of collective action newly
+visible with ``big data'' research methods from software engineering
+to answer fundamental social scientific questions.
+
+Seeking to understand the determinants of collective action, my
+research has been driven by three overlapping themes: (1)
+population-level observational studies comparing failures to build
+communities to the rare successful attempts; (2) attention to the role
+of reputation and status in collective action; and (3) analyses of
+design changes treated as ``natural experiments'' to build a deeper,
+and often causal, understanding of social processes from observational
+data. Almost all of my work incorporates at least two of these themes.
+
+\section{Population-Level Observational Studies}
+
+Although there have been many thousands of studies of online
+collective action and peer production, the vast majority of these
+studies have only considered successful projects like Wikipedia and
+GNU/Linux.  The majority of research on collective action -- both
+online and off -- has only considered projects that have successfully
+mobilized contributors. In this sense, most previous analyses of
+collection action have systematically selected on their dependent
+variable. Most of my research treats projects as the unit of analysis
+and mobilization as the dependent variable, comparing successful
+examples of collective actions to failures.
+
+% \begin{wrapfigure}{r}{0.4\textwidth}
+%  \begin{centering}
+%  \includegraphics[width=2.4in]{figures/wp_citations_by_year.png}
+%  \caption{Number of published academic articles with ``wikipedia''
+%  in title by year.}
+%  \label{fig:wppapers}
+%  \end{centering}
+%\end{wrapfigure}
+
+\begin{wrapfigure}{r}{2.6in}
+ \begin{centering}
+ \includegraphics[width=2.6in]{figures/scratch_screenshot_default.png}
+ \caption{A screenshot of the Scratch desktop programming environment
+   where users create animations and interactive games.}
+ \label{fig:scratchapp}
+ \end{centering}
+ \vspace{-2em}
+\end{wrapfigure}
+
+
+For example, in a working paper that is part of my dissertation, I
+compare Wikipedia to seven attempts to create online collaborative
+encyclopedia projects that were launched before Wikipedia
+\cite{hill_almost_2012}. Using a inductive, grounded-theory based
+analysis of founder interviews and archival data, I propose four
+hypothesis for why Wikipedia built a large community while extremely
+similar projects struggled to do so. Although the paper's methods
+diverge from the quantitative, ``big data'' approach typical of most
+of my work, the research question and strategy is representative.
+
+I have also addressed this question in a series of quantitative
+studies of the Scratch online community: a public website with a large
+community of users who create, share, and remix interactive media. The
+community is built around the Scratch programming environment: a
+freely downloadable desktop application that allows amateur creators
+to combine media with programming code (see Figure
+\ref{fig:scratchapp}. Despite the fact that Scratch is a community
+designed to promote collaboration through content remixing, only about
+ten percent of Scratch projects will attract even a second
+contributor.
+
+\begin{wrapfigure}{l}{2.6in}
+ \begin{centering}
+ \includegraphics[width=2.6in]{figures/frontpage_modified-topremix.png}
+  \caption{The front page of the Scratch online community where users
+    can share and collaborate on projects.}
+ \label{fig:scratchfrontpage}
+ \end{centering}
+ \vspace{-2em}
+\end{wrapfigure}
+
+In one study, forthcoming in American Behavioral Scientist, I test
+three of the most commonly cited theories associated with
+``generativity'' (i.e., qualities of technology or content that make
+some works more fertile group for collaboration). I find some support
+for previous theories but also find that, across the board, factors
+associated with increased collaboration are associated with less
+original and less transformative modes of joint-work
+\cite{hill_remixing_2012}. In another published study using data from
+Scratch, I show that more superficial collaboration leads to negative
+reactions and displeasure in the community
+\cite{hill_responses_2010}.
+
+I am conducting a similar population based analysis in a new dataset I
+have created with a population of 80,000 public attempts at ``wikis''
+(i.e., public websites using the same infrastructure as Wikipedia). In
+a working paper using this dataset, I consider inter-organizational
+effects of competition for volunteer labor and find little support for
+a widely cited ecological model of collective action from sociology
+that treats volunteer labor as fixed and finite resource. Using data
+on wikis hosted by both Wikia and the Wikimedia Foundation, I show
+that contributions across peer production projects are driven by
+environment-level changes in interest and that projects can even
+benefit from complimentarities between similar projects
+\cite{hill_is_2012}.
+
+\section{Reputation and Status}
+
+Although empirical research comparing successful and unsuccessful peer
+projects has been rare, theories offering to explain the success of
+collective action online have been widespread. No theory has been more
+influential or widespread than the suggestion that, in the absence of
+pecuniary rewards, engagement in collective action in online
+communities is driven by the possibility of increased reputation and
+status conferred upon contributors to an online public good.
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+ \vspace{-1em}
+ \begin{centering}
+ \includegraphics[width=1.9in]{figures/barnstar_alone.png}
+ \caption{Image of a ``barnstar'' social award given by Wikipedia
+   contributors to each other to recognize positive contributions .}
+ \label{fig:barnstar}
+ \end{centering}
+ \vspace{-1em}
+\end{wrapfigure}
+
+In a study of status-based awards in Wikipedia called ``barnstars''
+(see Figure \ref{fig:barnstar}) that I will be submitting to a major
+sociology journal by the end of this year, I provide an empirical test
+of an influential status-based theory of collective action from
+sociology. Although the study finds support for the widely
+hypothesized virtuous cycle of status rewarding active contributors,
+it also finds that these effects are limited to a sub-population of
+Wikipedia contributors -- i.e., those who show their awards off to
+others in virtual trophy cases \cite{hill_status_2012}. This result
+has broad implications for both status-based theories of collective
+action as well the design of reputation-based reward systems.
+
+In another study of Scratch, nominated for best paper at the CHI 2011
+conference \cite{monroy-hernandez_computers_2011}, I paired a
+quantitative analysis of a design change with in-depth interviews of
+users to demonstrate how credit-giving is ineffective when it stems
+from an automated system because the system fails to reinforce
+status-ordering through credible human expressions of social deference
+and gratitude.
+
+\section{Design-Driven Natural Experiments}
+
+\begin{wrapfigure}{r}{0.25\textwidth}
+ \begin{centering}
+ \includegraphics[width=1.5in]{figures/lilypad.png}
+ \caption{A image of the LilyPad Arduino microcontroller.}
+ \label{fig:lilypad}
+ \end{centering}
+\end{wrapfigure}
+
+Although nearly all of my work has important implications for the
+design of socio-technical systems, I have structured much of my work
+around the evaluation of design interventions. In several papers, I
+treat design changes in technologies as ``natural experiments'' that
+exogenously change the ways that social structure is enacted in order
+to both build causal understanding from field data and to tighten the
+distance between theories and and design.
+
+For example, to evaluate the impact of status-based incentives and
+collaboration in Scratch, I use a regression discontinuity framework
+to measure the causal effect of increased status for collaboration in
+Scratch \cite{hill_causal_2012}. In that study, which I am preparing
+for submission to a communication journal this fall, I show that the
+highlighting the work of the authors of collaborative projects on the
+Scratch web page (see the bottom of Figure \ref{fig:scratchfrontpage})
+resulted in more collaboration but also caused a decrease in the
+amount of total effort exerted by contributors. Speaking to
+fundamental sociological work in the literature on collective action,
+I present evidence that this decrease is driven by both an the influx
+of new contributors and a decrease in the effort and contributions of
+established contributors.
+
+In other papers, I have helped analyze sales records of hobbyists
+microcontrollers to suggest that relatively simple design changes in
+the \emph{LilyPad Arduino} -- a electronics toolkit minimally
+re-designed for women and girls (see Figure \ref{fig:lilypad}) -- can
+lead to large increases in the proportion of women contributors
+through important shifts in the type of projects created
+\cite{buechley_lilypad_2010}. In other work, I have explored how
+technical errors may be able to provide similar opportunities for
+analysis \cite{hill_revealing_2010}.
+
+% or changes in socio-technical systems describing responsibility for a piece of software can lead to an important impact in the type and structure of contributions in peer production \cite{michlmayr_quality_2003}
+
+\section{Research Agenda}
+
+My research agenda involves further exploration of the determinants of
+collection action online -- especially using a series of large new
+datasets I have built in my dissertation research. I plan to both
+continue this research trajectory and to create new social and
+technical infrastructure that will allow others researchers to join me
+in the type ``big data'' observational research in active communities
+that my research involves. This section outlines some future
+directions I plan to explore.
+
+\emph{Toolkits for Experimental Social Design} -- My research has been
+possible through relationships I have with a series of organizations
+with large active online communities (e.g., the MIT Media Lab and the
+Wikimedia Foundation). These organizations, like many others, make
+design changes to the software that supports their communities to
+encourage contributions and improve aspects of their users'
+experiences. Most of the time, these organizations have very little
+idea if these changes work. I plan to build on my own experience
+evaluating natural experiments in online communities to create a
+technical framework, and a network of academic and practitioner
+collaborators, to facilitate well-designed experiments by the hosts of
+large online communities and a system for data sharing that allows for
+academic evaluation of these experiments.
+
+\emph{Understanding the Relationship Between Collective Action and
+  Performance} -- My work has treated collective action and production
+as ends in themselves and has largely avoided the consideration of
+issues of performance, efficiency, or quality. Using my existing
+datasets, I will compare the performance of collaborative production
+to individually produced works to understand when successful
+collection action leads to higher performance or quality. In a
+manuscript currently under review using data from Scratch, I show
+important limitations of collaboration in remixing quality,
+particularly in regards to more artistic or media-intensive projects
+\cite{hill_cost_2012}. I will further explore this direction in future
+work.
+
+\emph{Integrated Theory of Design for Collective Action} --
+My studies of status provide a detailed understanding of the dynamics
+of collection action in relation to one important independent
+variable. In future work, I plan to evaluate the effect of governance
+and different systems of authority, framing, modularity and project
+complexity. In the long term, I hope to work toward a broad set of
+principles of design for collection action and community.
+
+In graduate school, I have been fortunate to collaborate with many
+co-authors in many academic departments and I intend to continue this
+tradition going forward. In sum, my research uses design to contribute
+to social scientific theories of collective action, and using theories
+of collective action to influence design and offers implications and
+opportunities for a broad range of disciplines and fields.
+
+% bibliography here
+\renewcommand{\bibsection}{\section{\bibname}\prebibhook}
+\baselineskip 14.2pt
+\bibliography{refs-processed}
+\bibliographystyle{unsrt}
+
+\end{document}
+
